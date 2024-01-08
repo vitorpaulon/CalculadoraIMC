@@ -17,11 +17,25 @@ public class Program
 
         Console.WriteLine("Seu IMC e: " + IMC + "\n");// \n pula linha
 
-        Console.WriteLine("IMC menor que 18.5 significa abaixo do peso;");
-        Console.WriteLine("IMC entre 18.5 e 24.9 significa peso normal");
-        Console.WriteLine("IMC entre 25 e 29.9 significa sobrepeso");
-        Console.WriteLine("IMC entre 30 e 34.9 significa obesidade I");
-        Console.WriteLine("IMC entre 35 e 40 significa obesidade II e III");
-
+				if(IMC < 18.5)
+				{
+					Console.WriteLine("IMC menor que 18.5 significa abaixo do peso;");
+				}
+				else if(IMC < 25)
+				{
+					Console.WriteLine("IMC entre 18.5 e 24.9 significa peso normal");
+				}
+				else if(IMC < 30)
+				{
+					Console.WriteLine("IMC entre 25 e 29.9 significa sobrepeso");
+				}
+				else if(IMC < 35)
+				{
+					Console.WriteLine("IMC entre 30 e 34.9 significa obesidade I");
+				}
+				else
+				{
+					Console.WriteLine("IMC maior ou igual a 35 significa obesidade II");
+				}
     }
 }
